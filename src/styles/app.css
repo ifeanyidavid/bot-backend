@@ -1,0 +1,12 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.appContainer {
+    height: 100vh;
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 70px 370px auto; */
+}

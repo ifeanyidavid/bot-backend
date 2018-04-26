@@ -1,0 +1,54 @@
+.menu {
+    display: grid;
+    justify-content: center;
+    align-content: space-between;
+    background: #006d90;
+    height: 100%;
+    padding: 40px 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.menu .menu-top,
+.menu .menu-bottom {
+    display: grid;
+    align-self: start;
+    justify-items: center;
+}
+
+.menu .menu-top .menu-icon,
+.menu .menu-bottom .menu-icon {
+    margin-bottom: 24px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.menu .menu-top .menu-icon:hover {
+    background: rgba(0, 165, 217, 0.3);
+}
+
+.menu .menu-top .menu-icon .icon,
+.menu .menu-bottom .menu-icon .icon {
+    display: block;
+}
+
+.menu .menu-bottom .menu-icon {
+    background: rgba(193, 215, 47, 0.54);
+}
+
+.menu .menu-bottom .menu-icon:last-of-type {
+    margin-bottom: 0px;
+}
+/* .menu .menu-icon {
+  display: inline-block;
+  margin: 0 0 20px;
+} */
+/* .menu-bottom {
+  width: 0;
+} */
+/* .menu-bottom .menu-bottom__icon {
+  background: rgba(193, 215, 47, 0.54);
+} */

@@ -1,0 +1,120 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    margin-left: 370px;
+    background: #fff;
+    position: relative;
+    z-index: 100000;
+}
+
+.chat.reveal {
+    margin-left: 70px;
+}
+
+.chatarea-header {
+    display: block;
+}
+
+.chatarea-header span p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 24px 0 24px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.chatarea-header p:last-of-type {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 8px 0 8px 16px;
+    margin: 0;
+
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 15px;
+}
+
+.chatarea {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.chatarea-body {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-grow: 1;
+}
+
+.chatarea-body .chat-bubble-container {
+    display: flex;
+    padding: 32px 24px 5px;
+}
+
+.chatarea-body .chat-bubble-container.fromMe {
+    justify-content: flex-end;
+}
+
+.chatarea-body .chat-bubble-container .chat-bubble-wrapper {
+    display: flex;
+    width: 50%;
+}
+
+.chatarea-body
+    .chat-bubble-container
+    .chat-bubble-wrapper
+    .showAvatar.bot-avatar {
+    display: none !important;
+}
+
+.chatarea-body .chat-bubble-container .chat-bubble-wrapper .bot-avatar {
+    background: rgba(0, 0, 0, 0.12);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.chatarea-body .chat-bubble-container .chat-bubble-wrapper .chat-bubble {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.chatarea-body .chat-bubble-container.fromMe .chat-bubble-wrapper .chat-bubble {
+    background: rgba(0, 165, 217, 0.12);
+}
+
+.chatarea-body .chat-bubble-container .chat-bubble-wrapper .chat-bubble p {
+    margin: 0;
+    padding: 12px 12px 16px 12px;
+    font-size: 14px;
+}
+
+.chat-input-wrapper {
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    height: 150px;
+}
+
+.chat-input {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 8px 16px 24px;
+    position: absolute;
+    bottom: 0;
+}
+
+.chat-input-header p {
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    color: #00a5d9;
+    font-size: 13px;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #00a5d9;
+    margin: 0;
+}
